@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>BuyBestProduct Ltd</title>
+        <link href="theme.css" rel="stylesheet" />
+        <script src="jquery-3.1.1.min.js"></script>
+        <script src="data.js"></script>
+        <script src="mainJs.js"></script>        
+        <script src="member.js"></script>
+        <script src="shoppingCart.js"></script>
+    </head>
+    <body>
+        <div class="header" id="header">
+            <h1><span>Buy</span><span>Best</span>Product Ltd</h1>
+            <nav id="navMenu">
+                <ul class="header_menu" id="header_menu">
+                    <li class="menuItem">Menu Here
+                        <div id="submenu">
+                            <ul class="sub_menu">
+                                <li><a href="javascript:init(ItemData)">All Product</a></li>
+                                <li><a href="javascript:newProduct(ItemData)">New Product</a></li>
+                                <li class="submenuTitle">Category</li>
+                                <li><a href="javascript:searchCate('Accessory')">Accessory</a></li> 
+                                <li><a href="javascript:searchCate('Notebook')">Notebook</a></li>
+                                <li><a href="javascript:searchCate('Smartphone')">Smartphone</a></li> 
+                                <li><a href="javascript:searchCate('Software')">Software</a></li> 
+                                <li><a href="javascript:searchCate('Tablet')">Tablet</a></li>   
+                                <li class="submenuTitle">Tags</li>
+                                <li><a href="javascript:searchTag('apple')">Apple</a></li>
+                                <li><a href="javascript:searchTag('asus')">Asus</a></li>
+                                <li><a href="javascript:searchTag('earphone')">Earphone</a></li>   
+                                <li><a href="javascript:searchTag('mircosoft')">Mircosoft</a></li> 
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menuItem"><input type="text" id="search" placeholder="Search here..." /><button id="btnSearch">Search</button></li>
+                    <li class="menuItem"></li>
+                    <li class="menuItem"></li>
+                    <li class="menuItem">
+                        <a href="###" id="btnShoppingCart">
+                            Shopping Cart
+                            <span id="cartItemNum"></span>
+                        </a>
+                    </li>   
+                </ul>
+            </nav>
+        </div>
+        <div class="wrap">
+            <div id="content">
+
+            </div>
+        </div>
+    </body>
+</html>
